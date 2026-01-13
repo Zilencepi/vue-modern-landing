@@ -7,17 +7,16 @@ Perfect for startups, SaaS products, portfolios, and marketing websites.
 
 ## 🚀 Features
 
-- ⚡ **Vue 3 + Vite** – fast development & build
-- 🎨 **Tailwind CSS** – easy styling & customization
-- 🌙 **Dark / Light Mode** (with system preference support)
-- 🧠 **Pinia Store** – clean state management
-- 📱 Fully responsive design
-- 🧩 Reusable components & clean structure
-- 🧭 Smooth scroll navigation
-- 🔝 Back to Top button
-- 📄 Legal pages included (Privacy Policy & Terms of Service)
-- 🔍 SEO-ready (meta tags, Open Graph, favicon)
-- 🛠 Easy to customize – perfect for non-experts
+- ⚡ **Vue 3 + Vite** – fast development & production build  
+- 🎨 **Tailwind CSS** – easy styling & customization  
+- 🌙 **Dark / Light Mode** (system preference supported)  
+- 🧠 **Pinia** – clean state management  
+- 📱 Fully responsive design  
+- 🧩 Reusable components & clean project structure  
+- 🗨 Smooth scroll navigation  
+- 🔝 Back to Top button  
+- 📜 Privacy Policy & Terms pages included  
+- 🔍 SEO-ready (Open Graph, favicon)  
 
 ---
 
@@ -31,79 +30,105 @@ src/
 ├─ views/             # Pages (Home, Privacy, Terms)
 ├─ stores/            # Pinia stores (theme, billing)
 ├─ data/              # Editable content (text, pricing, features)
+├─ router/            # Vue Router configuration
+├─ App.vue
 └─ main.js
+```
 
-🎨 Dark Mode
+---
 
-Toggle available in the header
+## 🌙 Dark Mode
 
-Automatically respects system preference
+- Toggle available in the header  
+- Automatically respects system preference  
+- Implemented using Tailwind `dark:` classes  
+- Theme state persisted via Pinia
 
-Styles handled via Tailwind dark: classes
+---
 
-State persisted using Pinia
+## ✏️ How to Customize
 
+### 1️⃣ Change Text Content
 
-✏️ How to Customize
-1️⃣ Change Text Content
+Main editable content is located in:
 
-All main content is located in:
-
+```txt
 src/data/
-
+```
 
 Example:
 
+```js
 // src/data/hero.js
 export const heroContent = {
   title: 'Your Product Title',
   subtitle: 'Your subtitle here',
   ctaText: 'Get Started'
 }
+```
 
-2️⃣ Change Colors
+### 2️⃣ Change Colors & Styling
 
-Edit Tailwind styles directly in components or update:
+You can customize styles by:
 
+- Editing Tailwind utility classes directly in components
+- Updating global configuration in:
+
+```txt
 tailwind.config.js
+```
 
-3️⃣ Pricing Plans
+### 3️⃣ Pricing Plans
 
-Update pricing data here:
+Pricing plans are stored in:
 
+```txt
 src/data/pricing.js
+```
 
-🧪 Development
+---
+
+## 🤪 Development
 
 Install dependencies:
 
+```bash
 npm install
+```
 
-Run development server:
+Run the development server:
 
+```bash
 npm run dev
+```
 
-📦 Production Build
+Build the project for production:
+
+```bash
 npm run build
+```
 
+Production-ready files will be generated in the `dist/` folder.
 
-The production-ready files will be generated in the dist/ folder.
+---
 
-🌐 SEO & Social Sharing
+## 🌐 SEO & Social Sharing
 
-Meta tags configured in index.html
+- Meta tags configured in `index.html`
+- Open Graph & Twitter Card support included
+- Custom favicon and social share image supported via `public/` folder
 
-Open Graph & Twitter cards included
+---
 
-Custom favicon & social share image supported
+## 🛒 License
 
-🛒 License
+This template is intended for commercial use. You may use it for personal or client projects according to the marketplace license.
 
-This template is intended for commercial use.
-You may use it for personal or client projects according to the marketplace license.
+---
 
-💬 Support
+## 💬 Support
 
 If you have questions or need help customizing the template, feel free to reach out.
 
 Happy building! 🚀
+
