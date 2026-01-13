@@ -1,0 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global styles for the template */
+
