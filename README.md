@@ -1,103 +1,109 @@
-# VueLanding - Modern Vue 3 Landing Page Template
+# Vue Modern Landing Page
 
-A modern, responsive Vue 3 landing page template with dark mode, pricing, testimonials, and scroll animations. Perfect for startups, SaaS, and personal projects. Ready for production and ThemeForest/Gumroad distribution.
-
----
-
-## 🌐 Demo
-
-Check out the live demo: [YOUR DEMO LINK HERE](#)
+A modern, clean, and fully responsive **Vue 3 landing page template** built with **Vite, Tailwind CSS, and Pinia**.  
+Perfect for startups, SaaS products, portfolios, and marketing websites.
 
 ---
 
-## 📂 Features
+## 🚀 Features
 
-- Fully responsive layout
-- Dark mode toggle with smooth transitions
-- Hero section with call-to-action
-- Features section highlighting your product/services
-- Pricing section with monthly/yearly toggle
-- Testimonials section
-- Footer with legal links and "Back to Top" button
-- SEO-friendly meta tags & Open Graph / Twitter cards
-- Smooth scroll navigation
-- Back-to-top floating button with fade and bounce animations
-- Ready for production with Vite + Tailwind CSS + Vue 3
+- ⚡ **Vue 3 + Vite** – fast development & build
+- 🎨 **Tailwind CSS** – easy styling & customization
+- 🌙 **Dark / Light Mode** (with system preference support)
+- 🧠 **Pinia Store** – clean state management
+- 📱 Fully responsive design
+- 🧩 Reusable components & clean structure
+- 🧭 Smooth scroll navigation
+- 🔝 Back to Top button
+- 📄 Legal pages included (Privacy Policy & Terms of Service)
+- 🔍 SEO-ready (meta tags, Open Graph, favicon)
+- 🛠 Easy to customize – perfect for non-experts
 
 ---
 
-## 🚀 Installation
+## 📂 Project Structure
 
-1. Clone the repository:
+```txt
+src/
+├─ components/        # UI & layout components
+├─ sections/          # Page sections (Hero, Features, Pricing, etc.)
+├─ layouts/           # Layout wrappers
+├─ views/             # Pages (Home, Privacy, Terms)
+├─ stores/            # Pinia stores (theme, billing)
+├─ data/              # Editable content (text, pricing, features)
+└─ main.js
 
-```bash
-git clone https://github.com/YOUR-USERNAME/YOUR-REPO.git
+🎨 Dark Mode
 
-Navigate to the project folder:
-cd vue-modern-landing
+Toggle available in the header
+
+Automatically respects system preference
+
+Styles handled via Tailwind dark: classes
+
+State persisted using Pinia
+
+
+✏️ How to Customize
+1️⃣ Change Text Content
+
+All main content is located in:
+
+src/data/
+
+
+Example:
+
+// src/data/hero.js
+export const heroContent = {
+  title: 'Your Product Title',
+  subtitle: 'Your subtitle here',
+  ctaText: 'Get Started'
+}
+
+2️⃣ Change Colors
+
+Edit Tailwind styles directly in components or update:
+
+tailwind.config.js
+
+3️⃣ Pricing Plans
+
+Update pricing data here:
+
+src/data/pricing.js
+
+🧪 Development
 
 Install dependencies:
+
 npm install
 
-Run the development server:
+Run development server:
+
 npm run dev
 
-Build for production:
+📦 Production Build
 npm run build
 
-🛠️ Customization
 
-Theme Colors & Fonts: Modify Tailwind configuration (tailwind.config.js) to adjust colors, fonts, or spacing.
+The production-ready files will be generated in the dist/ folder.
 
-Sections: Add or remove sections in HomeView.vue.
+🌐 SEO & Social Sharing
 
-Routing: Add new pages via src/router/index.js.
+Meta tags configured in index.html
 
-Favicon: Update public/favicon.ico and public/favicon-dark.ico for dark/light mode.
+Open Graph & Twitter cards included
 
-Social Share Image: Replace public/social-share.png with your image.
+Custom favicon & social share image supported
 
+🛒 License
 
+This template is intended for commercial use.
+You may use it for personal or client projects according to the marketplace license.
 
-📄 Pages Included
+💬 Support
 
-Home
+If you have questions or need help customizing the template, feel free to reach out.
 
-Privacy Policy
-
-Terms of Service
-
-All pages are fully responsive and styled consistently.
-
-⚙️ GitHub Repository
-
-You can find the source code here: YOUR GITHUB LINK HERE
-
-
-📦 Deployment
-
-This template is ready for deployment to any static host, including:
-
-Netlify
-
-Vercel
-
-GitHub Pages
-
-ThemeForest/Gumroad (for sale)
-
-💡 Notes for Buyers
-
-Use the included README.md for setup instructions.
-
-Customize text, images, and colors to match your brand.
-
-Keep the folder structure intact for smooth updates and maintenance.
-
-Dark mode automatically switches based on user preference.
-
-📞 Support
-
-For any issues, questions, or customizations, feel free to contact the template author.
-
-Made with ❤️ using Vue 3, Vite, and Tailwind CSS.
+Happy building! 🚀
