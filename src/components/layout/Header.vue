@@ -1,7 +1,9 @@
 <template>
   <header class="relative z-50 w-full border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <span class="text-lg font-semibold">VueLanding</span>
+      <router-link to="/" class="text-lg font-semibold hover:text-gray-900 dark:hover:text-gray-300">
+        VueLanding
+      </router-link>
     
 
 
@@ -9,6 +11,7 @@
         <a href="#features" class="hover:text-gray-900 dark:hover:text-gray-300">Features</a>
         <a href="#pricing" class="hover:text-gray-900 dark:hover:text-gray-300">Pricing</a>
         <a href="#testimonials" class="hover:text-gray-900 dark:hover:text-gray-300">Testimonials</a>
+        <router-link to="/contact" class="hover:text-gray-900 dark:hover:text-gray-300">Contact</router-link>
       </nav>
 
 <transition
@@ -27,7 +30,8 @@
       <a href="#features" @click="closeMenu">Features</a>
       <a href="#pricing" @click="closeMenu">Pricing</a>
       <a href="#testimonials" @click="closeMenu">Testimonials</a>
-      <a href="#" @click="closeMenu">Contact</a>
+      <router-link to="/contact" class="hover:text-gray-900 dark:hover:text-gray-300">Contact</router-link>
+
     </div>
   </div>
 </transition>
