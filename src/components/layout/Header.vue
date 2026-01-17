@@ -21,7 +21,7 @@
 >
   <div
     v-if="isOpen"
-    class="absolute left-0 top-full w-full bg-white dark:bg-gray-900 border-t dark:border-gray-800 md:hidden"
+    class="absolute left-0 top-full w-full bg-white dark:bg-gray-900 border-t border-b dark:border-gray-800 md:hidden"
   >
     <div class="flex flex-col gap-4 px-6 py-6">
       <a href="#features" @click="closeMenu">Features</a>
