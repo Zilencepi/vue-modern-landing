@@ -2,9 +2,9 @@
   <div class="flex flex-col min-h-screen">
     <Header />
 
-    <!-- Main sa flex-grow i display flex za vertikalno centriranje contenta -->
-    <main class="flex-grow flex flex-col">
-      <router-view class="flex-grow" />
+    <!-- Main raste da popuni ekran i gura footer na dno -->
+    <main class="flex-1 flex flex-col">
+      <router-view />
     </main>
 
     <Footer />

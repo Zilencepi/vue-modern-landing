@@ -1,9 +1,10 @@
 <template>
-  <section class="py-20 bg-gray-50 dark:bg-gray-900">
-    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+  <!-- Section raste da popuni ekran i gura footer na dno -->
+  <section class="flex-1 flex flex-col bg-gray-50 dark:bg-gray-900 py-20">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 flex-1">
 
       <!-- Left content -->
-      <div>
+      <div class="flex flex-col justify-start">
         <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">
           {{ content.title }}
         </h1>
@@ -17,13 +18,15 @@
       </div>
 
       <!-- Form -->
-      <form class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg space-y-6" @submit.prevent>
+      <form class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg space-y-6 flex flex-col"
+            @submit.prevent>
         <div>
           <label for="name" class="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300">
             {{ content.form.nameLabel }}
           </label>
           <input
             id="name"
+            name="name"
             type="text"
             autocomplete="name"
             :placeholder="content.form.namePlaceholder"
@@ -32,12 +35,14 @@
                    focus:outline-none focus:ring-2 focus:ring-primary"
           />
         </div>
+
         <div>
           <label for="email" class="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300">
             {{ content.form.emailLabel }}
           </label>
           <input
             id="email"
+            name="email"
             type="email"
             autocomplete="email"
             :placeholder="content.form.emailPlaceholder"
@@ -46,13 +51,15 @@
                    focus:outline-none focus:ring-2 focus:ring-primary"
           />
         </div>
+
         <div>
           <label for="message" class="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300">
             {{ content.form.messageLabel }}
           </label>
           <textarea
             id="message"
-            autocomplete="message"
+            name="message"
+            autocomplete="off"
             rows="4"
             :placeholder="content.form.messagePlaceholder"
             class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700
