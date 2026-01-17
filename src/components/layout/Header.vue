@@ -8,7 +8,7 @@
       <nav class="hidden md:flex space-x-6 text-sm">
         <a href="#features" class="hover:text-gray-900 dark:hover:text-gray-300">Features</a>
         <a href="#pricing" class="hover:text-gray-900 dark:hover:text-gray-300">Pricing</a>
-        <a href="#testimonials" class="hover:text-gray-900 dark:hover:text-gray-300">Contact</a>
+        <a href="#testimonials" class="hover:text-gray-900 dark:hover:text-gray-300">Testimonials</a>
       </nav>
 
 <transition
@@ -27,7 +27,7 @@
       <a href="#features" @click="closeMenu">Features</a>
       <a href="#pricing" @click="closeMenu">Pricing</a>
       <a href="#testimonials" @click="closeMenu">Testimonials</a>
-      <a href="#contact" @click="closeMenu">Contact</a>
+      <a href="#" @click="closeMenu">Contact</a>
     </div>
   </div>
 </transition>
