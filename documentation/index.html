@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vue Modern Landing Page – Documentation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f9fafb;
+      color: #111827;
+      line-height: 1.7;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    h1, h2, h3 {
+      color: #111827;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-top: 50px;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 6px;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    code {
+      background: #e5e7eb;
+      padding: 3px 6px;
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+
+    pre {
+      background: #111827;
+      color: #e5e7eb;
+      padding: 16px;
+      border-radius: 8px;
+      overflow-x: auto;
+      margin-top: 10px;
+    }
+
+    pre code {
+      background: none;
+      padding: 0;
+      color: inherit;
+    }
+
+    .note {
+      background: #eef2ff;
+      border-left: 4px solid #6366f1;
+      padding: 12px 16px;
+      margin: 20px 0;
+    }
+
+    footer {
+      margin-top: 80px;
+      text-align: center;
+      font-size: 14px;
+      color: #6b7280;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <h1>Vue Modern Landing Page</h1>
+    <p>
+      A modern, clean, and fully responsive Vue 3 landing page template built with
+      Vite, Tailwind CSS, and Pinia.
+    </p>
+
+    <h2>Introduction</h2>
+    <p>
+      This template is designed for startups, SaaS products, portfolios, and marketing websites.
+      It is frontend-only and focuses on clean code, performance, and easy customization.
+    </p>
+
+    <h2>Requirements</h2>
+    <ul>
+      <li>Node.js 18+</li>
+      <li>npm or yarn</li>
+    </ul>
+
+    <h2>Installation</h2>
+    <pre><code>npm install
+    npm run dev</code></pre>
+
+    <p>To build for production:</p>
+    <pre><code>npm run build</code></pre>
+
+    <h2>Project Structure</h2>
+    <pre><code>src/
+    ├─ components/   UI & layout components
+    ├─ sections/     Page sections (Hero, Features, Pricing)
+    ├─ layouts/      Layout wrappers
+    ├─ views/        Pages (Home, Contact, Privacy, Terms)
+    ├─ stores/       Pinia stores
+    ├─ data/         Editable content
+    ├─ router/       Vue Router configuration</code></pre>
+
+    <h2>Customization</h2>
+
+    <h3>Text Content</h3>
+    <p>
+      All main text content is stored inside:
+    </p>
+    <pre><code>src/data/</code></pre>
+
+    <p>
+      Example:
+    </p>
+    <pre><code>// src/data/contact.js
+    export const contactContent = {
+    title: 'Get in Touch',
+    subtitle: 'We would love to hear from you!',
+    }</code></pre>
+
+    <h3>Colors & Styling</h3>
+    <p>
+      This template uses Tailwind CSS. You can customize colors and styles by editing:
+    </p>
+    <pre><code>tailwind.config.js</code></pre>
+
+    <h2>Contact Page</h2>
+    <p>
+      The contact page is located at:
+    </p>
+    <pre><code>src/views/ContactView.vue</code></pre>
+
+    <p>
+      Contact page content can be edited here:
+    </p>
+    <pre><code>src/data/contact.js</code></pre>
+
+    <div class="note">
+      <strong>Note:</strong> This template is frontend-only.
+      The contact form does not submit data to a server.
+      You can connect it to your own backend or services like Netlify Forms.
+    </div>
+
+    <h2>Dark Mode</h2>
+    <p>
+      Dark mode is implemented using Tailwind's <code>dark:</code> classes and managed via Pinia.
+      The user's preference is stored locally and respects system settings.
+    </p>
+
+    <h2>Deployment</h2>
+    <p>
+      You can deploy this template easily using platforms like Netlify or Vercel.
+    </p>
+
+    <h2>Support</h2>
+    <p>
+      If you need help customizing this template, please contact the author via ThemeForest.
+    </p>
+
+    <footer>
+      © 2026 Vue Modern Landing Page – Documentation
+    </footer>
+
+  </div>
+</body>
+</html>

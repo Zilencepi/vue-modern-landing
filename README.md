@@ -158,6 +158,9 @@ This template is intended for commercial use. You may use it for personal or cli
 
 ---
 
+
+
+
 ## 💬 Support
 
 If you have questions or need help customizing the template, feel free to reach out.
